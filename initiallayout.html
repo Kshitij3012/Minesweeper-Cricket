@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minesweeper Cricket</title>
+  <link rel="stylesheet" type="text/css" href="initial.css">
+  <style>
+    /* Add CSS for instruction popup */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      visibility: hidden;
+    }
+
+    .popup-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="name">MINESWEEPER CRICKET</a>
+    <ul>
+      <li><a href="#" onclick="showInstructions()">Instructions</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="Lovepik_com-401726202-clouds.png" id="clouds">
+    <img src="imgbin_soccer-specific-stadium-football-pitch-png.png" id="stadium">
+    
+  </section>
+  <div class="sec"><button onclick="openGame()">PLAY</button></div>
+
+  <!-- Add instruction popup -->
+  <div class="popup" id="instructionPopup">
+    <div class="popup-content">
+      <span class="close" onclick="hideInstructions()">&times;</span>
+      <h2>Instructions</h2>
+      <p>1. Click the circle to play a ball.<br>2. Reload the page to restart.<br>3. You will lose if you click a circle with a fielder.</p>
+    </div>
+  </div>
+<script>
+let clouds=document.getElementById('clouds');
+let stadium=document.getElementById('stadium');
+let text=document.getElementById('text');
+
+window.addEventListener('scroll',function(){
+let value=window.scrollY;
+clouds.style.left=value*0.1 + 'px';
+
+stadium.style.top=value+'px';
+})
+
+
+</script>
+  <script>
+    // JavaScript functions to show/hide the instruction popup
+    function showInstructions() {
+      document.getElementById("instructionPopup").style.visibility = "visible";
+    }
+
+    function hideInstructions() {
+      document.getElementById("instructionPopup").style.visibility = "hidden";
+    }
+
+    function openGame() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

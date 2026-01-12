@@ -1,0 +1,135 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(6, 50px); /* Adjust the width of the columns as needed */
+  grid-gap: 10px; /* Adjust the value to increase/decrease the gap between blocks */
+  justify-content: center; /* Align blocks horizontally in the center */
+  align-items: center; /* Align blocks vertically in the center */
+   /* Replace 'path/to/background-image.jpg' with the actual path to your background image */
+  
+}
+body {
+  min-height: 100vh;
+background: linear-gradient(rgb(104, 175, 240),rgb(95, 225, 95) );
+background-image: url(imgbin_cricket-balls-cricket-bats-png.png),url(istockphoto-510414957-612x612.jpg);
+background-repeat: no-repeat; /* Prevent image repetition */
+background-size: 35%,cover; /* Scale the background image to cover the entire div */
+background-position: center top,center;
+
+/* Position the background image at the center */
+}
+
+
+.block {
+  width: 50px; /* Adjust the width of the blocks as needed */
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%; /* Make the block circular */
+}
+.block {
+  width: 50px; /* Adjust the width of the blocks as needed */
+  height: 50px;
+  border: none; /* Remove the border */
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%; /* Make the block circular */
+  background-color: #f1f1f1; /* Set a background color for the buttons */
+  transition: background-color 0.3s; /* Add transition for a smooth effect */
+}
+
+.block:hover {
+  background-color: #dcdcdc; /* Change the background color on hover */
+}
+
+.block:active {
+  background-color: #bfbfbf; /* Change the background color when clicked */
+}
+.block {
+  width: 50px; /* Adjust the width of the blocks as needed */
+  height: 50px;
+  border: none; /* Remove the border */
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%; /* Make the block circular */
+  background-color: #f1f1f1; /* Set a background color for the buttons */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+}
+
+.block:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.block:active {
+  transform: translateY(2px); /* Apply a 3D effect by moving the button down when clicked */
+  box-shadow: none; /* Remove the shadow when clicked */
+}
+title{text-align: center;}
+.score{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+p{position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+padding: 30px 100px;
+display:flex
+
+}
+
+
+.block {
+  width: 50px; /* Adjust the width of the blocks as needed */
+  height: 50px;
+  border: none; /* Remove the border */
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%; /* Make the block circular */
+  background-color: #f1f1f1; /* Set a background color for the buttons */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+  background-image: url(imgbin_circle-angle-symbol-png.png); /* Replace 'xyz.jpg' with the path to your image */
+  background-size: cover; /* Scale the image to cover the button */
+}
+
+.block:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.block:active {
+  transform: translateY(2px); /* Apply a 3D effect by moving the button down when clicked */
+  box-shadow: none; /* Remove the shadow when clicked */
+}
+#restartBtn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#restartBtn:hover {
+  background-color: #910000;
+}
+
+#restartBtn.hidden {
+  display: none;
+}

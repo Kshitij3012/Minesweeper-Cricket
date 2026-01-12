@@ -1,0 +1,15 @@
+#grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .block {
+    color: brown;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  

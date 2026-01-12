@@ -1,0 +1,151 @@
+*{
+
+  scroll-behavior:smooth;
+}
+
+body {
+    background: linear-gradient(rgb(76, 213, 237), rgb(33, 117, 12));
+    min-height: 100vh;
+    overflow-x: hidden; /* Add this line to remove horizontal scrolling */
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 1000;
+  }
+  
+  header .name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(193, 0, 0);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    
+  }
+  
+  header ul li a:hover,
+  header ul li a.active header .ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li a {
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  header ul li a:hover {
+    background: white;
+    color: aqua;
+  }
+  
+  section {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    overflow: hidden;
+    height: 100vh;
+    margin: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
+  section img#clouds {
+    mix-blend-mode: screen;
+  }
+  #text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 150px;
+    position: absolute;
+    color: rgb(166, 1, 1);
+    font-size: 100px;
+    z-index: 9;
+  }
+  #stadium{z-index: 10;}
+  .sec{
+    position: relative;
+    padding: 100px;
+    background:rgb(33, 117, 12) ;
+    color: black;}
+    section::before{
+        content: '';
+        position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:100px;
+    background: linear-gradient(to top,rgb(33, 117, 12),transparent);
+    z-index: 1000;}
+    
+    /* Add CSS for instruction popup */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      visibility: hidden;
+    }
+
+    .popup-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  /* ...existing CSS... */
+
+/* Style for the PLAY button */
+.sec button {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sec button:hover {
+  background: white;
+  color: aqua;
+}
+
+/* Center the PLAY button */
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ...existing CSS... */

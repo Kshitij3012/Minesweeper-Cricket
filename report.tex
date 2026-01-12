@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Report}
+\author{Avani Mawal 22b0996}
+\date{June 2023}
+
+\begin{document}
+
+\maketitle
+\title{MINESWEEPER CRICKET}
+
+\section{Introduction}
+The cricket game is a web-based game inspired by the classic Minesweeper game. It presents the player with a 6 by 6 grid of buttons, behind which are hidden points and fielders. If the player clicks on a button with a fielder, the game ends. The objective is to score the maximum number of points without getting caught by the fielders.
+
+\section{The Process}
+The customization of the game involved modifying a basic HTML code of a Minesweeper game and giving it a cricket-themed appearance.
+the initial code:
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{screen1.png}
+  \caption{Example Image}
+  \label{fig:example}
+\end{figure}
+
+\subsection{Background Styling}
+To enhance the cricket theme, the background of the entire page was styled as a cricket ground. Additionally, a cricket ball image was used as the background within which the grid was displayed. This differentiation of background was achieved using the img tag and setting the image source (src) to the desired images.
+
+\subsection{Grid Styling}
+To give the buttons a circular appearance, the border-radius property was set to 50\%\. Each button was also given a token image to represent a cricket element. The image tokens were added using the background-image property in CSS, with the desired images specified as the source.
+
+\subsection{Start Page with Instructions}
+To provide a more professional touch, an additional start page was created. This page displayed instructions and allowed the player to start the game at their convenience.
+
+\subsection{Scrolling Parallax Effect}
+To make the start page visually appealing, a scrolling parallax effect was implemented for the cloud and stadium images. This effect was achieved using the JavaScript addEventListener function to track the scrolling event and update the position of the images dynamically.
+
+\subsection{Instructions as Pop-up Box}
+To present the instructions in a user-friendly manner, a pop-up box was created. This was accomplished by implementing two JavaScript functions, showInstructions() and hideInstructions(). These functions controlled the display of the instructions pop-up box based on user interactions.
+
+\subsection{Restart}
+After customizing the game with the cricket theme and creating the start page with instructions, the next step was to add a restart button to reload the website. This button allows the player to restart the game whenever desired.
+
+The restart button was implemented using HTML and CSS. In the HTML code, a new button element was added with the id "restartBtn". This id is used to select the button in the CSS code for styling and functionality.
+
+\section{Challenges}
+1.The biggest challenge in this was the javascript part. Debugging it took quite a lot time but it also increased my understanding in the language at the same time.Many a times when I added something new to the code, the previous features got disturbed.
+2.positioning of the options , buttons, background images, headings and images.
+3.Creating the scrolling parallax.
+
+\section{Refrences}
+\subsection{Youtube}
+Provided tutorial videos on many options that can be used.
+1.https://youtu.be/1wfeqDyMUx4
+2.https://youtu.be/DABVLJjnVUs
+3.https://youtu.be/W6NZfCO5SIk
+\subsection{Images}
+1.imgbin.com
+2.https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fcricket-pitch-texture&psig=AOvVaw3RJIieNn0p8n9qNDTpw9yO&ust=1686851814990000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCNiY6Ouqw_8CFQAAAAAdAAAAABAE
+3.https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fcricket-ball-white-background-cartoon-design_30669798.htm&psig=AOvVaw29TBRk6hD-cEWYpLe2Bcxl&ust=1686851852915000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCPCD4P2qw_8CFQAAAAAdAAAAABAE
+\subsection{Introduction to the languages}
+https://www.w3schools.com/js/default.asp
+\subsection{debugging the code}
+1.Google
+2.Youtube
+\section*{\LARGE Thank You}
+\vspace{0.5cm}
+\noindent
+\end{document}
+
